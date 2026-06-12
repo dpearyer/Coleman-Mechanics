@@ -59,7 +59,7 @@ export default function ContactForm() {
   return (
     <div className="contact-form">
       <div className="form-title">Send a Message</div>
-      <div className="form-subtitle">// We'll get back to you within 24 hours</div>
+      <div className="form-subtitle">We'll get back to you within 24 hours</div>
 
       <div className="form-row">
         <div className="form-group">

@@ -3,7 +3,7 @@ import { Fragment } from "react"
 const STATS = [
   { value: "100%", label: "Reliable Service & Transparent Pricing" },
   { value: "Mobile", label: "We Come To You" },
-  { value: "BCS", label: "Brazos Valley" },
+  { value: "Bryan, Texas", label: "College Station" },
 ]
 
 export default function Hero() {
@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="hero-fade" />
       <div className="hero-side-accent" />
 
-      <div className="hero-eyebrow">Bryan, Texas — Mobile Mechanic Service</div>
+      <div className="hero-eyebrow">Bryan, Texas - Mobile Mechanic Service</div>
 
       <h1>
         Your Car,<br />
