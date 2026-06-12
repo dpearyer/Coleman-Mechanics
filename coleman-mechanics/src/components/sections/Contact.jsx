@@ -1,4 +1,5 @@
-import ContactForm from "./ContactForm"
+import ContactForm from "../ui/ContactForm"
+
 
 const CONTACT_METHODS = [
   { icon: "📞", label: "Phone", value: "(979) 402-5488", href: "tel:9794025488" },
