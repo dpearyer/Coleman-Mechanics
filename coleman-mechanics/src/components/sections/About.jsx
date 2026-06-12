@@ -21,7 +21,7 @@ export default function About() {
           <div className="about-card-top">
             <div className="about-card-monogram">CA</div>
             <div className="about-card-name">Coleman Auto</div>
-            <div className="about-card-sub">Bryan, TX — Est. Brazos Valley</div>
+            <div className="about-card-sub">Bryan, TX — Est. College Station</div>
           </div>
           <div className="about-card-stats">
             {STATS.map((stat, i) => (
