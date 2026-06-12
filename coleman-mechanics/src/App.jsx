@@ -7,6 +7,7 @@ import Services from "./components/sections/Services"
 import About from "./components/sections/About"
 import Process from "./components/sections/Process"
 import Contact from "./components/sections/Contact"
+import Newsletter from "./components/sections/Newsletter"
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <div className="rule-dark" />
       <Process />
       <Contact />
+      <Newsletter />
       <Footer />
     </>
   )
