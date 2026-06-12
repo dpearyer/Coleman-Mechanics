@@ -14,7 +14,7 @@ export default function Contact() {
         <div className="contact-info">
           <div className="section-eyebrow">Get In Touch</div>
           <h2>Ready to Get<br />Your Car Right?</h2>
-          <p>Reach out directly — call or email and we'll get back to you fast. No shop to drive to, no tow truck needed. We come to you and sort out the details together.</p>
+          <p>Reach out directly - call or email and we'll get back to you fast. No shop to drive to, no tow truck needed. We come to you and sort out the details together.</p>
 
           <div className="contact-methods">
             {CONTACT_METHODS.map((method, i) => (

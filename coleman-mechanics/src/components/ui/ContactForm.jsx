@@ -25,13 +25,35 @@ export default function ContactForm() {
     setForm({ ...form, [e.target.id]: e.target.value })
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const { fname, email, service, message } = form
     if (!fname || !email || !service || !message) {
       alert("Please fill out all required fields.")
       return
     }
-    setSubmitted(true)
+
+    try {
+      const response = await fetch("https://formspree.io/f/xgobpogb", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: `${form.fname} ${form.lname}`,
+          email: form.email,
+          phone: form.phone,
+          service: form.service,
+          location: form.location,
+          message: form.message,
+        }),
+      })
+
+      if (response.ok) {
+        setSubmitted(true)
+      } else {
+        alert("Something went wrong. Please try again or call directly.")
+      }
+    } catch (err) {
+      alert("Something went wrong. Please try again or call directly.")
+    }
   }
 
   return (
