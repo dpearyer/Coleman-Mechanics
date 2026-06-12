@@ -1,0 +1,70 @@
+/* ─── TICKER ─── */
+  .ticker-bar {
+    background: var(--navy-mid);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    padding: 0.65rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .ticker-inner {
+    display: inline-block;
+    animation: ticker 28s linear infinite;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--taupe-light);
+  }
+
+
+   /* ─── SHARED ─── */
+  section { padding: 5.5rem 4rem; }
+
+  .section-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--taupe);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .section-eyebrow::before {
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background: var(--taupe);
+    display: inline-block;
+  }
+
+  h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--navy);
+    line-height: 1.1;
+    margin-bottom: 3rem;
+  }
+ /* ─── ANIMATIONS ─── */
+ /* ─── ANIMATIONS ─── */
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-eyebrow  { animation: fadeUp 0.6s ease 0.1s both; }
+h1             { animation: fadeUp 0.7s ease 0.25s both; }
+.hero-sub      { animation: fadeUp 0.6s ease 0.4s both; }
+.hero-actions  { animation: fadeUp 0.6s ease 0.55s both; }
+.hero-stats    { animation: fadeUp 0.6s ease 0.65s both; }
